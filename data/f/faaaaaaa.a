@@ -1,0 +1,46 @@
+HKCR
+{
+	Eagent.Agent.1 = s 'Agent Class'
+	{
+		CLSID = s '{DA69A8BA-1022-4439-99F3-A02B82117548}'
+	}
+	Eagent.Agent = s 'Agent Class'
+	{
+		CLSID = s '{DA69A8BA-1022-4439-99F3-A02B82117548}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {DA69A8BA-1022-4439-99F3-A02B82117548} = s 'Agent Class'
+		{
+			ProgID = s 'Eagent.Agent.1'
+			VersionIndependentProgID = s 'Eagent.Agent'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'both'
+			}
+		}
+	}
+}
+
+HKLM
+{
+	SOFTWARE
+	{
+		Microsoft
+		{
+			Windows
+			{
+				CurrentVersion
+				{
+					Explorer
+					{
+						'Browser Helper Objects'
+						{
+							{DA69A8BA-1022-4439-99F3-A02B82117548}
+						}
+					}
+				}
+			}
+		}
+	}
+}
