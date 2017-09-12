@@ -23,6 +23,7 @@ public:
 protected:
 	HICON m_hIcon;
 	void DrawOne(PCWSTR filepath, int x);
+	void DoIt();
 
 	// Generated message map functions
 	virtual BOOL OnInitDialog();
@@ -30,5 +31,4 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 	virtual void OnOK();
-	virtual void OnCancel();
 };

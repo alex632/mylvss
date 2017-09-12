@@ -83,8 +83,8 @@ EXSTYLE WS_EX_APPWINDOW
 CAPTION "Image Processing"
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "OK",IDOK,492,179,50,14
-    PUSHBUTTON      "Cancel",IDCANCEL,546,179,50,14
+    DEFPUSHBUTTON   "Do it",IDOK,492,179,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,546,179,50,14
 END
 
 
@@ -110,13 +110,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "TODO: <Company name>"
-            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "CompanyName", "On My Own"
+            VALUE "FileDescription", "Captcha Recognition"
             VALUE "FileVersion", "1.0.0.1"
             VALUE "InternalName", "imgproc.exe"
-            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "LegalCopyright", "I'm what I am: Copyright 2017 (c) On My Own.  All rights reserved."
             VALUE "OriginalFilename", "imgproc.exe"
-            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductName", "Captcha Recognition"
             VALUE "ProductVersion", "1.0.0.1"
         END
     END
